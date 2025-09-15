@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ARB Modern — قلتشات</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="logo">ARB<span style="color:#ffb84d">777</span></div>
+  <nav>
+    <a href="index.html">صفحة الرئيسية</a>
+    <a href="downloads.html" class="active">قليتشات</a>
+    <a href="news.html"></a>
+    <a href="contact.html"></a>
+  </nav>
+</header>
+
+<section class="container section">
+  <h2>📂 قليتشات المتاحة</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="assets/p_h.png" alt="ملف 1">
+      <h3>قلتش رقصة</h3>
+      <p>رقصة الضغط (طراكسو).</p>
+      <a href="#" class="btn" onclick="downloadWithAd('🤸قليتش رقصة ضغط(طراكسيو).zip')">تحميل</a>
+    </div>
+    <div class="card">
+      <img src="assets/file2.png" alt="ملف 2">
+      <h3>مود جرافيك</h3>
+      <p>تعديلات رسومية تجعل اللعبة أكثر وضوحاً وجمالاً.</p>
+      <a href="#" class="btn" onclick="downloadWithAd('files/file2.zip')">تحميل</a>
+    </div>
+    <div class="card">
+      <img src="assets/file3.png" alt="ملف 3">
+      <h3>سكربت أدوات</h3>
+      <p>أدوات مساعدة لتسريع اللعب وتحسين التحكم.</p>
+      <a href="#" class="btn" onclick="downloadWithAd('files/file3.zip')">تحميل</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">💯<span id="yr"></span> ARB 777</footer>
+
+<script>
+function downloadWithAd(fileUrl) {
+  // 🔗 ضع رابط الإعلان هنا
+  let adUrl = "https://otieu.com/4/9862987";
+
+  // فتح الإعلان في نافذة جديدة
+  window.open(adUrl, "_blank");
+
+  // بدء التحميل في نفس الوقت
+  let a = document.createElement("a");
+  a.href = fileUrl;
+  a.setAttribute("download", "");
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+}
+</script>
+</body>
+</html>
